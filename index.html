@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="title">
+        <img
+          src="./interactive-pricing-component-main/images/pattern-circles.svg"
+          alt=""
+        />
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30 days trial. No credit card required.</p>
+      </div>
+      <div class="main">
+        <div class="price">
+          <p>100K PAGEVIEWS</p>
+          <p><span id="cash">$16.00</span>/ month</p>
+        </div>
+        <div class="slider">
+          <input
+            type="range"
+            name=""
+            value="16"
+            min="8"
+            max="24"
+            onChange="rangeSlide(this.value)"
+          />
+        </div>
+        <div class="other">
+          <p>Monthly Billing</p>
+          <div class="toggle-container">
+            <div class="toggle-btn">
+              <div class="inner-cicle"></div>
+            </div>
+          </div>
+          <p>Yearly Billing <span>25% discount</span></p>
+        </div>
+        <div class="elems">
+          <div class="ticks">
+            <div class="tick">
+              <img
+                src="./interactive-pricing-component-main/images/icon-check.svg"
+                alt=""
+              />
+              <p>Unlimited webisites</p>
+            </div>
+            <div class="tick">
+              <img
+                src="./interactive-pricing-component-main/images/icon-check.svg"
+                alt=""
+              />
+              <p>100% data ownership</p>
+            </div>
+            <div class="tick">
+              <img
+                src="./interactive-pricing-component-main/images/icon-check.svg"
+                alt=""
+              />
+              <p>Email reports</p>
+            </div>
+          </div>
+          <button id="button">Start my trail</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
